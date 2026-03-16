@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Core AI</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.png"  type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- ===== 사이드바: 대화 목록 ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="btn-toggle-sidebar sidebar-close-btn" id="sidebarCloseBtn">✕</button>
+        <div class="sidebar-logo">
+          <img src="/assets/img/new-logo.png" alt="로고" />
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title"><i class="bi bi-journal-text fs-3 mb-2"></i> 작업 일지</div>
+        <button class="chat-item">
+          서비스 준비중
+        </button>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title"><i class="bi bi-exclamation-triangle"></i>  이상 보고</div>
+        <button class="chat-item chat-item--active">
+          공정 품질 개선
+        </button>
+      </div>
+
+      <div class="sidebar-footer profile-box">
+        <div class="profile-avatar">JB</div>
+        <div class="profile-info">
+          <div class="profile-name">재빈 최</div>
+          <div class="profile-email">choijb@dm-i.kr</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== 메인 채팅 영역 ===== -->
+    <main class="chat">
+      <!-- 상단 헤더 -->
+      <header class="chat-header">
+        <button
+          id="sidebarToggleBtn"
+          class="btn-toggle-sidebar"
+          type="button"
+          aria-label="사이드바 열기"
+        >
+          ☰
+        </button>
+        <div class="chat-title">Core AI</div>
+      </header>
+
+      <!-- 메시지 영역 -->
+      <section class="chat-messages">
+        <div id="chatMessages" style="padding: 16px; max-width: 1000px; margin: 0 auto;">
+
+        </div>
+        <!-- 메시지는 JS에서 동적으로 추가될 예정 (app.js) -->
+        <!-- JS 없이도 기본 더미를 넣고 싶으면 여기 직접 div.message-blk 추가해도 됨 -->
+      </section>
+
+      <!-- 입력 영역 -->
+      <footer class="chat-input-wrap">
+        <form id="chatForm" class="chat-form">
+
+          <!-- 이미지 첨부 버튼 -->
+          <!-- <label for="chatImage" class="btn-toggle-sidebar">
+            <i class="bi bi-upload"></i>
+          </label>
+          <input type="file" id="chatImage" class="chat-image-input" accept="image/*" hidden /> -->
+
+          <textarea id="chatInput" rows="1" class="chat-input" placeholder="메시지를 입력하세요..."></textarea>
+
+          <button type="submit" class="btn-send" title="전송">
+            ▷
+          </button>
+        </form>
+
+        <div class="chat-input-hint">
+          Enter: 전송 &nbsp;&nbsp;|&nbsp;&nbsp; Shift + Enter: 줄바꿈
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="/assets/js/sendToMessage.js"></script>
+</body>
+</html>
