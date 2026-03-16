@@ -1,6 +1,6 @@
-// /assets/js/sendToMessage.js
-import { CoreAPI } from "/assets/js/common/core-api.js";
-import { createStatusBubble, scrollToBottom } from "/assets/js/utils.js";
+// ./assets/js/sendToMessage.js
+import { CoreAPI } from "./assets/js/common/core-api.js";
+import { createStatusBubble, scrollToBottom } from "./assets/js/utils.js";
 
 console.log("✅ SendToMessage.JS Load On!");
 
