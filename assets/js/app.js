@@ -128,7 +128,7 @@ chatFormEl.addEventListener("submit", async (e) => {
       if (res?.data) {
         const reply = {
           role: "assistant",
-          content: res.data.message || res.data.echo || "(응답 없음)",
+          content: res.data.message || res.data.echo || "⚠️ 현재는 정적 페이지만 배포된 환경입니다.",
         };
         chatMessagesEl.appendChild(createMessageElement(reply));
         scrollToBottom();
