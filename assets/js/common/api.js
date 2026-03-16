@@ -1,6 +1,6 @@
 console.log("✅ Api.JS load On!");
 
-const BASE_URL = "http://127.0.0.1:8886";
+const BASE_URL = "https://g-bak.github.io/dmi-coreai/";
 
 function qs(obj) {
   const p = new URLSearchParams();

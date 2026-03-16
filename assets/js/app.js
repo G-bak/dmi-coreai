@@ -1,8 +1,7 @@
 // ./assets/js/app.js
-import { toggleSidebar, closeSidebar, autoResize, scrollToBottom, scrollToTop } from "./assets/js/utils.js";
-import { initialMessages, initialErrorMessages } from "./assets/js/data/init-dummy-msg.js";
-import { CoreAPI } from "./assets/js/common/core-api.js";
-import { sendMessageToServer } from "./assets/js/sendToMessage.js";
+import { toggleSidebar, closeSidebar, autoResize, scrollToBottom, scrollToTop } from "./utils.js";
+import { initialMessages, initialErrorMessages } from "./data/init-dummy-msg.js";
+import { sendMessageToServer } from "./sendToMessage.js";
 
 // =========================
 // 요소 선택 헬퍼

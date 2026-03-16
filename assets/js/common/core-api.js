@@ -1,5 +1,5 @@
 // /assets/js/common/core-api.js
-import { apiGet, apiPost } from "/assets/js/common/api.js";
+import { apiGet, apiPost } from "./api.js";
 
 console.log("✅ Core-API.JS Load On!");
 
